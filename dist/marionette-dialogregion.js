@@ -29,7 +29,7 @@ var __hasProp = {}.hasOwnProperty,
         })(this),
         onClosed: (function(_this) {
           return function() {
-            if (_this.oldView === _this.currentView) {
+            if ((_this.oldView != null) && _this.oldView === _this.currentView) {
               if (Marionette.VERSION) {
                 return _this.oldView.destroy();
               } else {
