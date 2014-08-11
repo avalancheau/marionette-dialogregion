@@ -1,0 +1,34 @@
+{
+  "name": "marionette-dialogregion",
+  "version": "0.1.0",
+  "description": "Custom Marionette region setup for dialogs/lightboxes, using the jquery-colorbox lightbox library.",
+  "main": "dist/marionette-dialogregion.js",
+  "dependencies": {
+    "jquery-colorbox": "^1.5.10",
+    "backbone.marionette": ">= 1.6.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-coffee": "^2.1.1",
+    "gulp-util": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avalancheau/marionette-dialogregion.git"
+  },
+  "keywords": [
+    "marionette",
+    "colorbox",
+    "dialog",
+    "lightbox"
+  ],
+  "author": "Louis Simoneau <simoneau.louis@gmail.com>",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/avalancheau/marionette-dialogregion/issues"
+  },
+  "homepage": "https://github.com/avalancheau/marionette-dialogregion"
+}
