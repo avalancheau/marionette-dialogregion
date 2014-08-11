@@ -1,5 +1,5 @@
-marionette-dialogregion-rails
-=============================
+marionette-dialogregion
+=======================
 
 Custom Marionette region setup for dialogs/lightboxes, using the jquery-colorbox lightbox library.
 
