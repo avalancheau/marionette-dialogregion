@@ -15,7 +15,7 @@
     "dialog",
     "modal"
   ],
-  "license": "MIT",
+  "license": "Apache",
   "ignore": [
     "**/.*",
     "node_modules",
