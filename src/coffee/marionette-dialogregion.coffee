@@ -19,7 +19,7 @@ do (Backbone, Marionette, $) ->
         onCleanup: =>
           @oldView = @currentView
         onClosed: =>
-          if @oldView == @currentView
+          if @oldView? && @oldView == @currentView
             # VERSION was added in 2.0, so that's enough
             # to know if we need close() or destroy()
             if Marionette.VERSION
