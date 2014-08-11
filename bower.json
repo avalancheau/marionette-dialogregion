@@ -26,8 +26,8 @@
     "test",
     "tests"
   ],
-  "dependencies": [
+  "dependencies": {
     "jquery-colorbox": "^1.5.10",
     "backbone.marionette": ">= 1.6.1"
-  ]
+  }
 }
