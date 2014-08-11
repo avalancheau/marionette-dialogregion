@@ -6,7 +6,10 @@
     "Louis Simoneau <simoneau.louis@gmail.com>"
   ],
   "description": "Custom Marionette region setup for dialogs/lightboxes using Colorbox.",
-  "main": "dist/marionette-dialogregion.js",
+  "main": [
+    "dist/marionette-dialogregion.js",
+    "dist/colorbox-base.css"
+  ],
   "keywords": [
     "marionette",
     "backbone",
