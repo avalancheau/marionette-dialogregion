@@ -1,9 +1,9 @@
 marionette-dialogregion
 =======================
 
-Custom Marionette region setup for dialogs/lightboxes, using the jquery-colorbox lightbox library.
+Custom Marionette region setup for dialogs/lightboxes, using the magnific-popup lightbox library.
 
-Largely based on Brian Mann's [Building Dialogs with Custom Regions](http://www.backbonerails.com/screencasts/building-dialogs-with-custom-regions) screencast, with a few extra options to make the dialogs un-closeable and to work around issues opening consecutive dialogs with Colorbox.
+Largely based on Brian Mann's [Building Dialogs with Custom Regions](http://www.backbonerails.com/screencasts/building-dialogs-with-custom-regions) screencast, with a few extra options to make the dialogs un-closeable and to work around issues opening consecutive dialogs.
 
 Usage
 -----
@@ -15,7 +15,7 @@ App.addRegions
   dialogRegion: Marionette.Region.Dialog.extend el: "#dialog"
 ```
 
-Now, when you show a view in that region, it will be displayed in a Colorbox lightbox:
+Now, when you show a view in that region, it will be displayed in a Magnific-popup lightbox:
 
 ```coffeescript
 App.dialogRegion.show view

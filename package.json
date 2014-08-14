@@ -1,10 +1,10 @@
 {
   "name": "marionette-dialogregion",
   "version": "0.1.2",
-  "description": "Custom Marionette region setup for dialogs/lightboxes, using the jquery-colorbox lightbox library.",
+  "description": "Custom Marionette region setup for dialogs/lightboxes, using the magnific-popup lightbox library.",
   "main": "dist/marionette-dialogregion.js",
   "dependencies": {
-    "jquery-colorbox": "^1.5.10",
+    "magnific-popup": "^0.9.9",
     "backbone.marionette": ">= 1.6.1"
   },
   "devDependencies": {
@@ -21,7 +21,7 @@
   },
   "keywords": [
     "marionette",
-    "colorbox",
+    "popup",
     "dialog",
     "lightbox"
   ],

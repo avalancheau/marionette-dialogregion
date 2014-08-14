@@ -14,39 +14,36 @@ var __hasProp = {}.hasOwnProperty,
       options = _.defaults(view.options, {
         closable: true
       });
-      $.colorbox({
-        href: this.$el,
-        inline: true,
-        closeButton: false,
-        transition: 'none',
-        fadeOut: 100,
-        overlayClose: options.closable,
-        escKey: options.closable,
-        onCleanup: (function(_this) {
-          return function() {
-            return _this.oldView = _this.currentView;
-          };
-        })(this),
-        onClosed: (function(_this) {
-          return function() {
-            if ((_this.oldView != null) && _this.oldView === _this.currentView) {
-              if (Marionette.VERSION) {
-                return _this.oldView.destroy();
-              } else {
-                return _this.oldView.close();
+      $.magnificPopup.open({
+        items: {
+          src: this.$el,
+          type: 'inline'
+        },
+        modal: !options.closable,
+        callbacks: {
+          beforeClose: (function(_this) {
+            return function() {
+              return _this.oldView = _this.currentView;
+            };
+          })(this),
+          close: (function(_this) {
+            return function() {
+              if ((_this.oldView != null) && _this.oldView === _this.currentView) {
+                if (Marionette.VERSION) {
+                  return _this.oldView.destroy();
+                } else {
+                  return _this.oldView.close();
+                }
               }
-            }
-          };
-        })(this)
+            };
+          })(this)
+        }
       });
       this.listenTo(view, 'close', function() {
-        return $.colorbox.remove();
+        return $.magnificPopup.close();
       });
-      this.listenTo(view, 'destroy', function() {
-        return $.colorbox.remove();
-      });
-      return this.listenTo(view, 'region:show', function() {
-        return $.colorbox.resize();
+      return this.listenTo(view, 'destroy', function() {
+        return $.magnificPopup.close();
       });
     };
 

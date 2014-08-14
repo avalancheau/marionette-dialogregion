@@ -5,15 +5,14 @@
   "authors": [
     "Louis Simoneau <simoneau.louis@gmail.com>"
   ],
-  "description": "Custom Marionette region setup for dialogs/lightboxes using Colorbox.",
+  "description": "Custom Marionette region setup for dialogs/lightboxes using Magnific-popup.",
   "main": [
-    "dist/marionette-dialogregion.js",
-    "dist/colorbox-base.css"
+    "dist/marionette-dialogregion.js"
   ],
   "keywords": [
     "marionette",
     "backbone",
-    "colorbox",
+    "popup",
     "region",
     "dialog",
     "modal"
@@ -27,7 +26,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery-colorbox": "^1.5.10",
+    "magnific-popup": "^0.9.9",
     "backbone.marionette": ">= 1.6.1"
   }
 }
