@@ -6,12 +6,14 @@ do (Backbone, Marionette, $) ->
       options = _.defaults(
         view.options,
         closable: true
+        dialogClassName: ""
       )
 
       $.magnificPopup.open
         items:
           src: @$el
           type: 'inline'
+        mainClass: options.dialogClassName
         modal: not options.closable
         callbacks:
           beforeClose: =>

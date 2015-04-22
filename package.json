@@ -8,7 +8,7 @@
     "backbone.marionette": ">= 1.6.1"
   },
   "devDependencies": {
-    "gulp": "^3.8.7",
+    "gulp": "^3.8.11",
     "gulp-coffee": "^2.1.1",
     "gulp-util": "^3.0.0"
   },

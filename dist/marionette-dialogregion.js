@@ -1,9 +1,9 @@
-var __hasProp = {}.hasOwnProperty,
-  __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+  hasProp = {}.hasOwnProperty;
 
 (function(Backbone, Marionette, $) {
-  return Marionette.Region.Dialog = (function(_super) {
-    __extends(Dialog, _super);
+  return Marionette.Region.Dialog = (function(superClass) {
+    extend(Dialog, superClass);
 
     function Dialog() {
       return Dialog.__super__.constructor.apply(this, arguments);
@@ -12,13 +12,15 @@ var __hasProp = {}.hasOwnProperty,
     Dialog.prototype.onShow = function(view) {
       var options;
       options = _.defaults(view.options, {
-        closable: true
+        closable: true,
+        dialogClassName: ""
       });
       $.magnificPopup.open({
         items: {
           src: this.$el,
           type: 'inline'
         },
+        mainClass: options.dialogClassName,
         modal: !options.closable,
         callbacks: {
           beforeClose: (function(_this) {
