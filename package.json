@@ -1,6 +1,6 @@
 {
   "name": "marionette-dialogregion",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Custom Marionette region setup for dialogs/lightboxes, using the magnific-popup lightbox library.",
   "main": "dist/marionette-dialogregion.js",
   "dependencies": {
